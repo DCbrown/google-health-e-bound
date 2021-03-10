@@ -1,0 +1,37 @@
+<!--
+<div>
+    <button class="start-button" *ngIf="!isRecording && !blobUrl" (click)="startRecording()">Start Recording</button>
+    <button class="stop-button" *ngIf="isRecording && !blobUrl" (click)="stopRecording()">Stop Recording</button>
+    <button class="cancel-button" *ngIf="!isRecording && blobUrl" (click)="clearRecordedData()">Clear Recording</button>
+    <div *ngIf="isRecording && !blobUrl"> {{recordedTime}} </div>
+    <div>
+    <audio *ngIf="!isRecording && blobUrl"  controls>
+      <source [src]="blobUrl" type="audio/webm">
+    </audio>
+    </div>
+  </div>
+-->
+<mat-toolbar color="primary">
+    Health-e-bound
+</mat-toolbar>
+
+<p>
+  {{ data }}
+</p>
+
+<mat-grid-list cols="1" rowHeight="100%">
+    <mat-grid-tile colspan="1">
+        <mat-icon name="btnActivateSpeechSearchMovie" id="btnActivateSpeechSearchMovie" (click)="activateSpeechSearchMovie()">mic</mat-icon>
+        <!--
+        <input type="text" class="form-control border-input" name="txtSpeechSearchMovieName" id="txtSpeechSearchMovieName" value=""
+        placeholder="Click below button and then say something!!!" [(ngModel)]="speechData">
+        -->
+        <!--
+        <button class="btn btn-info btn-fill btn-wd" name="btnActivateSpeechSearchMovie" id="btnActivateSpeechSearchMovie" (click)="activateSpeechSearchMovie()"
+          [disabled]="!showSearchButton">
+          Enable Speech Search
+        </button>
+        -->
+    </mat-grid-tile>
+</mat-grid-list>
+

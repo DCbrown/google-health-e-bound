@@ -1,0 +1,8 @@
+<p>voicecomponentdemo works!</p>
+
+<input type="text" class="form-control border-input" name="txtSpeechSearchMovieName" id="txtSpeechSearchMovieName" value=""
+placeholder="Click below button and then say something!!!" [(ngModel)]="speechData">
+<button class="btn btn-info btn-fill btn-wd" name="btnActivateSpeechSearchMovie" id="btnActivateSpeechSearchMovie" (click)="activateSpeechSearchMovie()"
+[disabled]="!showSearchButton">
+Enable Speech Search
+</button>
